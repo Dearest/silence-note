@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# slience note
+# 前言
 
-## Getting Started
+本项目创建的主要目的是为了学习前端技能，在产品上复刻了[flomo](https://flomoapp.com/) 。flomo是一款优秀的笔记工具，我自己也是早期用户，谨以此表达尊重和谢意。
 
-First, run the development server:
+在数据存储的思想上借鉴了[简悦](https://simpread.pro/pro.html)，不会要求用户注册，也不会保存用户的笔记数据，给用户提供一个唯一UID，且只会保存与UID一一对应的保证产品正常运行的数据。
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+主要目的是为了学习，所以本项目并不是一个完整的产品，着重在对前端较新技术的运用，因此开发的功能都为技术服务，在github projects页面有本项目的开发记录和任务拆分。同时也有Notion pages来记录开发的过程和心得体会，以及技术分享。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+本项目仅供学习交流，禁止用于任何商业行为。
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# 产品规划
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. 简单的输入框来创建笔记，避免过多的排版。
+2. 记录memos数据，像Github contributions看板一样，用小方块颜色区分memos数量。
+3. 笔记以标签分类，且支持标签的不提供文件夹，避免陷入分类的繁杂。
+4. 笔记内容以文件形式保存在本地，且可以通过坚果云和dropbox同步。
+5. 一期规划里只做Web端。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# 技术选型
 
-## Learn More
+在技术选型上为了避免开发过程中全是新技术带来的挫败感，选用了自己相对比较熟悉的技术，但依然是自己第一次一个人完整开发，依然有可以学习的地方。
 
-To learn more about Next.js, take a look at the following resources:
+**前端：**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- SSR: [`Next.js`](https://nextjs.org/)
+- JavaScript library: `React`
+- UI library: [`material ui`](https://mui.com/zh/)
+- API: [`Apollo`](https://www.apollographql.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**后端:**
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Language: `Ruby`
+- Framework: `Rails`
+- Database: [`PostgreSQL`](https://www.postgresql.org/)
