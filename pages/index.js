@@ -1,5 +1,7 @@
-export default function Home() {
+import { Home } from '../components/home'
+
+export default function Index(props) {
   return (
-   <div className="Test"> TEST </div>
+    <Home />
   )
 }
